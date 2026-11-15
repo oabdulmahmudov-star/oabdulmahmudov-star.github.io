@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #1e293b;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+header {
+    background: white;
+    padding: 20px 8%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #2563eb;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tag {
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.hero p:last-child {
+    max-width: 600px;
+    margin: auto;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #2563eb;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.status {
+    display: inline-block;
+    margin-top: 15px;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #e2e8f0;
+}
+
+body.dark {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark header,
+body.dark .card {
+    background: #1e293b;
+}
+
+body.dark .hero h2 {
+    color: #cbd5e1;
+}
+
+body.dark footer {
+    background: #1e293b;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 15px 5%;
+    }
+}
